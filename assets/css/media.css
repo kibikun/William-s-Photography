@@ -1,0 +1,133 @@
+@media (max-width:62.5rem)
+/* 1000px / 16 = 62.5 */
+    {
+    .grid__container {
+        min-width: 700px;
+        max-width: 700px;
+    }
+}
+
+@media (max-width:48rem)
+/* 768px / 16 = 62.5 */
+    {
+    .grid__container {
+        min-width: 500px;
+        max-width: 500px;
+    }
+
+    .main__nav {
+        justify-content: space-between;
+    }
+
+    .main__nav ul {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu:hover {
+        cursor: pointer;
+    }
+
+
+    .pop {
+        display: block;
+        transform: translateX(-100%);
+    }
+
+
+    .nav__list {
+        padding: 2rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: #fff;
+        height: 100vh;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in;
+    }
+
+
+    .modal__btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .modal__btn svg:hover {
+        cursor: pointer;
+    }
+
+    .nav__list ul {
+        padding: 2rem;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .nav__list ul li a .log-in {
+        margin-left: 20px;
+    }
+
+    .nav__list ul li:first-of-type a {
+        font-size: 1.2rem;
+
+    }
+
+    .nav__list ul a {
+        display: flex;
+        align-items: center;
+        font-family: "Merriweather", sans-serif;
+        font-size: 2rem;
+        font-weight: 100;
+        font-style: italic;
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .nav__list.active {
+        transform: translateX(0);
+    }
+
+}
+
+@media (max-width:37.5rem)
+/* 600 / 16 = 37.5 */
+    {
+    .home {
+        background-position: right center;
+    }
+}
+
+@media (max-width:31.25rem)
+/* 500 / 16 = 31.25 */
+    {
+    .title {
+        text-align: center;
+    }
+
+    .grid__container {
+        min-width: 320px;
+        max-width: 320px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+    }
+
+    .content:nth-of-type(4) {
+        grid-row: 3;
+    }
+}
+
+@media (max-width:25rem)
+/* 400 / 16 = 25 */
+    {
+    .home {
+        background-position: 80% center;
+    }
+}
